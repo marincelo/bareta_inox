@@ -59,6 +59,22 @@ a {
   }
 }
 
+ul {
+  list-style: none;
+
+  li {
+    transition: all .5s;
+
+    &:hover {
+      color: $primary;
+    }
+
+    .fa {
+      margin-right: .4rem;
+    }
+  }
+}
+
 #mainNav {
   font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
@@ -132,8 +148,6 @@ a {
 
   width: 100%;
   height: auto;
-  padding: 200px 0;
-
   text-align: center;
 
   color: white;
@@ -143,8 +157,11 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
   .intro-body {
     display: table-cell;
+    background-image: url('../img/3px-tile.png');
+    padding: 150px 0;
 
     vertical-align: middle;
     .brand-heading {
@@ -205,6 +222,10 @@ a {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
+  h2, p {
+    text-shadow: 1px 1px 2px black;
+  }
 }
 
 #map {
